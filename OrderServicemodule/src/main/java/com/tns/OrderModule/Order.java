@@ -1,13 +1,11 @@
 package com.tns.OrderModule;
 
-
-
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@EntityScan
-
+@Entity
+@Table(name="Order1")
 public class Order {
 
 	private int id;
